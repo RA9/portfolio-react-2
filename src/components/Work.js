@@ -10,6 +10,7 @@ export default function Work() {
           <h3 class="border-4 w-20  border-dashed px-4 py-4">Work</h3>
         </div>
 
+
         <details class="px-6 py-4">
           <summary class="font-bold text-2xl text-gray-800">
             Kwagei Group

@@ -1,6 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 
 export default function AuthorCard() {
+  const [isActive, setIsActive] = useState({
+    active: true,
+    name: "education"
+  })
   return (
     <div
       id="intro"
@@ -26,6 +30,19 @@ export default function AuthorCard() {
           French; I am not limited by this anyways, because I can <em>C</em>{" "}
           things.
         </p>
+        <div className="p-6 max-w-full mx-auto">
+          <ul className="flex justify-center items-center gap-4">
+            <li className={`border border-black rounded-lg p-2 ${isActive.active && isActive.name === "education" && 'bg-[#FF8F56]' }`}>
+              <a  href="" id="education" className="font-roboto font-bold text-xl text-[#E7EFF3]">Education</a>
+            </li>
+            <li className={`border border-black rounded-lg p-2 ${isActive.active && isActive.name === "work" && 'bg-[#FF8F56]' }`}>
+              <a  href="" id="work" className="font-roboto  text-xl">Work</a>
+            </li>
+            <li className={`border border-black rounded-lg p-2 ${isActive.active && isActive.name === "hobbies" && 'bg-[#FF8F56]' }`} >
+              <a  href="" id="hobbies" className="font-roboto  text-xl">Hobbies</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
