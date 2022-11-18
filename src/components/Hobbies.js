@@ -4,7 +4,7 @@ export default function Hobbies() {
     return (
         <div
         id="hobbie"
-        class="bg-[#B2B2B2] h-50 my-6 py-8 rounded-lg border-4"
+        class="bg-[#FFD8A9] h-50 my-6 py-8 rounded-lg border-4"
       >
          <div class="flex justify-center">
           <h3 class="border-4 w-25  border-dashed px-4 py-2 font-bold text-md">Hobbies</h3>
