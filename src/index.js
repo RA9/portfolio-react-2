@@ -9,6 +9,10 @@ import {
   Route,
 } from "react-router-dom";
 import Projects from './routes/projects';
+import Blog from './routes/blog';
+
+
+console.log("Here: ", process.env.REACT_APP_LIVE)
 
 const router = createBrowserRouter([
   {
@@ -18,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/projects",
     element: <Projects />
+  },
+  {
+    path: "/blog",
+    element: <Blog />
   }
 ]);
 

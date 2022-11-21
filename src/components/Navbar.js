@@ -103,7 +103,7 @@ export default function Navbar() {
                   Projects
                 </a>
                 <a
-                  href="#"
+                  href="/blog"
                   class="
                       inline-flex
                       items-center
