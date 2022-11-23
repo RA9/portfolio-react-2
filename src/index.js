@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import Projects from './routes/projects';
 import Blog from './routes/blog';
+import Contact from './routes/contact';
 
 
 console.log("Here: ", process.env.REACT_APP_LIVE)
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/blog",
     element: <Blog />
+  },
+  {
+    path: "/contact",
+    element: <Contact />
   }
 ]);
 
