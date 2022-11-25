@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { doc, getDoc } from "firebase/firestore/lite";
+import { doc, getDoc } from "firebase/firestore";
 import { FirebaseDB } from "../db/firebase";
 
 export default function PostAuthorCard({ authorId }) {
@@ -28,7 +28,7 @@ export default function PostAuthorCard({ authorId }) {
       </div>
       <div class="ml-3">
         <p class="text-sm font-medium text-gray-900">
-          <a href="#" class="hover:underline">
+          <a href="/" class="hover:underline">
             {`${author.firstname} ${author.lastname}`}
           </a>
         </p>

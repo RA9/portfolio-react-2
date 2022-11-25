@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar";
-import { collection, getDocs } from "firebase/firestore/lite";
+import { collection, getDocs } from "firebase/firestore";
 import { FirebaseDB } from "../../db/firebase";
 import PostAuthorCard from "../../components/PostAuthorCard";
 
