@@ -47,9 +47,9 @@ export default function Blog() {
           <div class="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
             {posts.length > 0 &&
               posts.map((post) => {
-                console.log({ post, author: post.author.path });
+                //  console.log({ post, author: post.author.path });
                 return (
-                  <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+                  <div key={post.id} class="flex flex-col overflow-hidden rounded-lg shadow-lg">
                     <div class="flex-shrink-0">
                       <img
                         class="h-48 w-full object-cover"
